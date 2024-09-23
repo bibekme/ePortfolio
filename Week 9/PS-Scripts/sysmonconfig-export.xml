@@ -1,0 +1,28 @@
+<Sysmon schemaversion="4.90">
+  <EventFiltering>
+
+    <!-- Process Creation (ID 1) -->
+    <ProcessCreate onmatch="include">
+      <!-- Track any .ps1 script execution -->
+      <Image condition="contains">powershell.exe</Image>
+      <CommandLine condition="contains">.ps1</CommandLine>
+    </ProcessCreate>
+
+    <!-- File Modification Event (File Creation Time Change) (ID 15) -->
+    <FileCreateTime onmatch="include">
+      <!-- Track modifications of .txt files -->
+      <TargetFilename condition="contains">.txt</TargetFilename>
+    </FileCreateTime>
+
+    <!-- File Creation (ID 11) -->
+    <FileCreate onmatch="include">
+      <!-- Track any new .txt files created -->
+      <TargetFilename condition="contains">.txt</TargetFilename>
+    </FileCreate>
+
+    <RegistryEvent onmatch="include">
+      <TargetObject condition="contains">\Run\</TargetObject>
+    </RegistryEvent>
+
+  </EventFiltering>
+</Sysmon>
