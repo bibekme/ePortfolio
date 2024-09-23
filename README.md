@@ -19,6 +19,12 @@ In Week 6, we set up the information system using **VirtualBox** with both **Kal
 - **VirtualBox Setup**: Screenshots showing the virtualized system and network configurations.
 - **Nessus Scan Results**: PDF, CSV, and screenshots documenting vulnerabilities identified in the **Windows VM**.
 - **Nmap Scan**: Outputs from **Nmap** scans that complement the Nessus findings.
+- **Week 6 PowerPoint Presentation**: A detailed presentation summarizing the information system setup, scanning results, and initial vulnerability findings.
+
+The PowerPoint presentation includes:
+- Setup process and system configuration.
+- Vulnerability scanning results (from Nessus and Nmap).
+- Screenshots illustrating the virtual environment and system architecture.
 
 ### Week 7: Threat Intelligence Report
 In Week 7, a **Threat Intelligence Report** was developed to identify the **most likely threat actor**, using data from **MITRE ATT&CK** and focusing on techniques associated with the **Clop ransomware**.
