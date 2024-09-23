@@ -37,6 +37,8 @@ In Week 9, we simulated two attacks:
 
 Detection mechanisms were set up using **Sysmon** to monitor for **file modifications** and **registry changes**. The custom **Sysmon configuration** was deployed, and **PowerShell scripts** were used to detect and log the attack activities.
 
+- **Code Documentation and Comments**: Each PowerShell script is well-documented with comments that explain each step of the attack and detection processes. This ensures clarity and ease of understanding for anyone reviewing or modifying the code in the future.
+- **PSScriptAnalyzer Usage**: PSScriptAnalyzer was used to ensure that all scripts follow best practices for PowerShell code, including style and functionality checks. This tool helped us clean up the scripts, improve readability, and ensure they adhere to security and performance guidelines.
 - **PS-Scripts Folder**: Includes PowerShell scripts for the attacks, Sysmon setup, and detection scripts.
 - **Sysmon Configuration**: Custom Sysmon configuration (`sysmonconfig-export.xml`) to detect the simulated attacks.
 
